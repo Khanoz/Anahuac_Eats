@@ -90,7 +90,7 @@ class ListItemWidget extends State<SwipeList> {
                               Padding(
                                 padding: EdgeInsets.fromLTRB(0, 3, 0, 3),
                                 child: Container(
-                                  child: Text(items[index].price.toString(),textAlign: TextAlign.center,), //TO DO: CAMBIAR 3D POR CUALQUIER OTRA COSA
+                                  child: Text("$"+items[index].price.toString(),textAlign: TextAlign.center,), //TO DO: CAMBIAR 3D POR CUALQUIER OTRA COSA
                                 ),
                               ),
                               Padding(
