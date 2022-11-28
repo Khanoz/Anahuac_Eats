@@ -1,3 +1,7 @@
 # anahuac_eats
 
-PDM2 Proyect with Miguel Nicolau
+Proyecto Desarrollo Movil 2
+App con login de firebase
+ListView Firestore
+Register
+Reset Password
