@@ -57,8 +57,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
                 child: Text(
-                  //'Sign in',
-                  item55.name,
+                  'Sign in',
                   style: TextStyle(fontSize: 18),
                 )),
             Container(
