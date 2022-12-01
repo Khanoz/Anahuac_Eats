@@ -1,3 +1,5 @@
+import 'package:anahuac_eats/main.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class Contact extends StatelessWidget {
@@ -67,6 +69,13 @@ class Contact extends StatelessWidget {
                           color: Colors.deepOrange,
                           fontWeight: FontWeight.bold,
                         ),),
+                        TextButton(
+                          child: const Text(
+                            'Sign out',
+                            style: TextStyle(fontSize: 16),
+                          ),
+                          onPressed: signout,
+                        )
                       ],
                     ),
                   ],
@@ -77,5 +86,10 @@ class Contact extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Future signout() async{
+    await FirebaseAuth.instance.signOut();
+    navigatorKey.currentState?.pop();
   }
 }
